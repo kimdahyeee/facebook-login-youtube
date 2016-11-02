@@ -12,7 +12,7 @@ class Auth extends MY_Controller {
 		$this->load->helper('url');
 		$this->load->helper('alert');
 		parse_str($_SERVER['QUERY_STRING'], $_REQUEST);
-		$this->load->library('facebook', array('appId'=>'826591484141725','secret'=>'defe9856ff38c76d9ca4165cfc0528d6', 'xfbml'=> true));
+		$this->load->library('facebook', array('appId'=>'','secret'=>'', 'xfbml'=> true));
 		$this->user = $this->facebook->getUser();
 	}
 
